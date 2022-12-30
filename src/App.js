@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header  cartItems={cartItems}/>
       <Roteamento
         productItems={productItems}
         cartItems={cartItems}

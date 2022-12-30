@@ -44,3 +44,11 @@
     width: 60%;
     float: left;
 }
+
+.cart-length{
+    display:table-header-group;
+    margin: 1px;
+    padding: 3px;
+    margin-top: 30px;
+    margin-left: 83px;
+}

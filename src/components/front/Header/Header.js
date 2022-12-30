@@ -5,7 +5,7 @@ import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
-const Header = () => {
+const Header = ({cartItems}) => {
     return (
         <header className='header'>
             <div>
@@ -33,16 +33,14 @@ const Header = () => {
                     </li>
                 </ul>
                 <ul>
-             
                     <li>
-                    
                         <Link to="/cart" className='cart'>
-                            
                             <FontAwesomeIcon
                              icon={faShoppingCart}
-                             
                               />
-                            
+                              <span className='cart-length'>
+                                {cartItems.length === 0 ? "" : cartItems.length}
+                              </span>
                         </Link>
                     </li>
                 </ul>
